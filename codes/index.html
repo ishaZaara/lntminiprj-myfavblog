@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NYC Journal | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+  <meta name="description" content="NYC Journal—discover New York attractions, culture, and highlights.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a href="index.html" class="logo">NYC Journal</a>
+      <nav aria-label="Primary">
+        <ul class="tabs">
+          <li><a class="tab active" href="index.html">Home</a></li>
+          <li><a class="tab" href="attractions.html">Attractions</a></li>
+          <li><a class="tab" href="culture.html">Culture</a></li>
+          <li><a class="tab" href="gallery.html">Gallery</a></li>
+          <li><a class="tab" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-nav" href="attractions.html">Next: Attractions →</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img class="fit" src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?q=80&w=2000&auto=format&fit=crop" alt="NYC skyline at dusk">
+      <div class="hero-overlay">
+        <h1>New York City</h1>
+        <p class="lede">Skylines, street life, and culture—discover the city in motion.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="attractions.html">Explore Attractions</a>
+          <a class="btn btn-outline" href="gallery.html">View Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Section -->
+    <section class="section">
+      <div class="container">
+        <h2>Featured</h2>
+        <div class="cards">
+          <article class="card">
+            <a href="attractions.html" class="card-link">
+              <div class="media ratio-16x9">
+                <img class="fit" src="https://i.natgeofe.com/n/15ec8dec-df7c-45af-a0ae-08d4e906a134/belvedere-castle.jpg" alt="Central Park path with trees">
+              </div>
+              <div class="card-body">
+                <h3>Central Park</h3>
+                <p>Find lakes, lawns, and quiet paths at the heart of Manhattan.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="culture.html" class="card-link">
+              <div class="media ratio-16x9">
+                <img class="fit" src="https://localadventurer.com/wp-content/uploads/2018/04/places-to-eat-in-nyc-food-bucket-list.jpg" alt="NYC slice of pizza">
+              </div>
+              <div class="card-body">
+                <h3>Cuisine</h3>
+                <p>Pizza slices, bagels, and flavors from every corner of the world.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="card">
+            <a href="gallery.html" class="card-link">
+              <div class="media ratio-16x9">
+                <img class="fit" src="https://images.ctfassets.net/1aemqu6a6t65/3kabdbjGeH7qnDze9JpRGD/df359fb39f5ec1f97a97397561dd5e79/Union-Square-Manhattan-NYC-Photo-Brittany-Petronella.jpg?h=1280&w=1920&fit=fill&f=center&q=75&fm=webp" alt="Brooklyn Bridge at sunrise">
+              </div>
+              <div class="card-body">
+                <h3>Gallery</h3>
+                <p>A curated grid of bridges, boroughs, and street scenes.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation Links -->
+    <nav class="container section row between">
+      <a class="btn btn-outline" href="gallery.html">← Gallery</a>
+      <a class="btn btn-primary" href="attractions.html">Next: Attractions →</a>
+    </nav>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> NYC Journal</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
