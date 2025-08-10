@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NYC Journal | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-row">
+    <a href="index.html" class="logo">NYC Journal</a>
+    <ul class="tabs">
+      <li><a class="tab" href="index.html">Home</a></li>
+      <li><a class="tab" href="attractions.html">Attractions</a></li>
+      <li><a class="tab" href="culture.html">Culture</a></li>
+      <li><a class="tab" href="gallery.html">Gallery</a></li>
+      <li><a class="tab active" href="contact.html">Contact</a></li>
+    </ul>
+    <a class="btn btn-nav" href="gallery.html">← Gallery</a>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1>Contact</h1>
+    <p class="lede">Questions, suggestions, or stories about New York? Send a note below.</p>
+
+    <form class="form" action="#" method="post">
+      <label>
+        <span>Name</span>
+        <input name="name" type="text" placeholder="Jane Doe" required>
+      </label>
+      <label>
+        <span>Email</span>
+        <input name="email" type="email" placeholder="jane@example.com" required>
+      </label>
+      <label>
+        <span>Topic</span>
+        <select name="topic">
+          <option>General</option>
+          <option>Attractions</option>
+          <option>Culture</option>
+          <option>Photo/Media</option>
+        </select>
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea name="message" rows="6" placeholder="Write your message..." required></textarea>
+      </label>
+      <div class="row gap">
+        <button type="submit" class="btn btn-primary">Send</button>
+        <button type="reset" class="btn btn-secondary">Clear</button>
+      </div>
+    </form>
+
+    <section class="panel">
+      <h2>Find New York City</h2>
+      <iframe title="New York City Map" src="https://www.google.com/maps?q=New+York+City&output=embed" width="100%" height="360" style="border:0" loading="lazy"></iframe>
+    </section>
+
+    <nav class="row between">
+      <a class="btn btn-outline" href="gallery.html">← Gallery</a>
+      <a class="btn" href="index.html">Back to Home</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>&copy; <span id="year"></span> NYC Journal</p></div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
