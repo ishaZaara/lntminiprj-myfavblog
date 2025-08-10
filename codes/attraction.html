@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NYC Journal | Attractions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-row">
+    <a href="index.html" class="logo">NYC Journal</a>
+    <ul class="tabs">
+      <li><a class="tab" href="index.html">Home</a></li>
+      <li><a class="tab active" href="attractions.html">Attractions</a></li>
+      <li><a class="tab" href="culture.html">Culture</a></li>
+      <li><a class="tab" href="gallery.html">Gallery</a></li>
+      <li><a class="tab" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="row gap">
+      <a class="btn btn-nav" href="index.html">← Home</a>
+      <a class="btn btn-nav" href="culture.html">Next: Culture →</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1>Top Attractions</h1>
+
+    <!-- Statue of Liberty -->
+    <article class="block">
+      <div class="media ratio-16x9">
+        <img class="fit" src="https://www.historyhit.com/app/uploads/bis-images/5150130/Statue-of-Liberty-e1632495792514-1576x1074.jpg" alt="Statue of Liberty against blue sky">
+      </div>
+      <div class="block-body">
+        <h2>Statue of Liberty</h2>
+        <p>Symbol of freedom with panoramic harbor views and an immersive museum.</p>
+      </div>
+    </article>
+
+    <!-- Central Park -->
+    <article class="block">
+      <div class="media ratio-16x9">
+        <img class="fit" src="https://www.parkcentralny.com/wp-content/uploads/2023/11/central_park_crop.jpg" alt="Central Park trees and lake with skyline">
+      </div>
+      <div class="block-body">
+        <h2>Central Park</h2>
+        <p>843 acres of meadows, bridges, and lakes—perfect for picnics and cycling.</p>
+      </div>
+    </article>
+
+    <!-- Times Square -->
+    <article class="block">
+      <div class="media ratio-16x9">
+        <img class="fit" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/New_york_times_square-terabass.jpg/500px-New_york_times_square-terabass.jpg" alt="Times Square neon billboards at night">
+      </div>
+      <div class="block-body">
+        <h2>Times Square</h2>
+        <p>Dazzling billboards and theater energy—best at dusk when lights glow.</p>
+      </div>
+    </article>
+
+    <!-- Brooklyn Bridge -->
+    <article class="block">
+      <div class="media ratio-16x9">
+        <img class="fit" src="https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/topic-brooklyn-bridge-gettyimages-91680627-feature?_a=BAVAZGDX0" alt="Brooklyn Bridge pedestrian path at sunrise">
+      </div>
+      <div class="block-body">
+        <h2>Brooklyn Bridge</h2>
+        <p>Walk at sunrise for skyline views connecting Manhattan and Brooklyn.</p>
+      </div>
+    </article>
+
+    <!-- The Met -->
+    <article class="block">
+      <div class="media ratio-3x2">
+        <img class="fit" src="https://silverkris.singaporeair.com/wp-content/uploads/2021/08/shutterstock_300803246.jpg" alt="The Metropolitan Museum of Art facade">
+      </div>
+      <div class="block-body">
+        <h2>The Metropolitan Museum of Art</h2>
+        <p>Collections spanning 5,000 years—from antiquities to modern art.</p>
+      </div>
+    </article>
+
+    <nav class="row between">
+      <a class="btn btn-outline" href="index.html">← Home</a>
+      <a class="btn btn-primary" href="culture.html">Next: Culture →</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>&copy; <span id="year"></span> NYC Journal</p></div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
