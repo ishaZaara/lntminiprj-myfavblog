@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NYC Journal | Culture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-row">
+    <a href="index.html" class="logo">NYC Journal</a>
+    <ul class="tabs">
+      <li><a class="tab" href="index.html">Home</a></li>
+      <li><a class="tab" href="attractions.html">Attractions</a></li>
+      <li><a class="tab active" href="culture.html">Culture</a></li>
+      <li><a class="tab" href="gallery.html">Gallery</a></li>
+      <li><a class="tab" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="row gap">
+      <a class="btn btn-nav" href="attractions.html">← Attractions</a>
+      <a class="btn btn-nav" href="gallery.html">Next: Gallery →</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1>Culture, Food, and Events</h1>
+
+    <article class="block">
+      <div class="media ratio-3x2">
+        <img class="fit" src="https://www.ownit.nyc/_next/image?url=https%3A%2F%2Fpr-redesign.expedrion.biz%2F%2Fuploads%2Fblog_banner_images%2F20240511173010__NYCStreetFood.jpeg&w=1920&q=75" alt="NYC foods">
+      </div>
+      <div class="block-body">
+        <h2>Food Traditions</h2>
+        <p>Classic slices and bagels meet global street food from every continent.</p>
+      </div>
+    </article>
+
+    <article class="block">
+      <div class="media ratio-16x9">
+        <img class="fit" src="https://www.chalkbeat.org/resizer/v2/QVGBXKGXYJH6TIUOATIOC4OMTM.jpg?focal=1623%2C758&auth=ab5e13331a8dcf7b4f60f1e1c0f591aeed80fff8596c81fe0ac2d13e443a2aad&width=1600&height=1066" alt="Broadway lights">
+      </div>
+      <div class="block-body">
+        <h2>Performing Arts</h2>
+        <p>Broadway and indie venues keep nights alive with plays and musicals.</p>
+      </div>
+    </article>
+
+    <article class="block">
+      <div class="media ratio-3x2">
+        <img class="fit" src="https://media.cnn.com/api/v1/images/stellar/prod/171227102336-met-museum-modern-art-wing.jpg?q=w_1160,c_fill/f_webp" alt="Street art in Brooklyn">
+      </div>
+      <div class="block-body">
+        <h2>Art & Design</h2>
+        <p>Street art in Bushwick and galleries in Chelsea shape visual culture.</p>
+      </div>
+    </article>
+
+    <aside class="panel">
+      <h2>Annual Events</h2>
+      <ul>
+        <li>Macy’s Thanksgiving Day Parade</li>
+        <li>New Year’s Eve in Times Square</li>
+        <li>SummerStage in Central Park</li>
+        <li>NYC Pride March</li>
+      </ul>
+    </aside>
+
+    <nav class="row between">
+      <a class="btn btn-outline" href="attractions.html">← Attractions</a>
+      <a class="btn btn-primary" href="gallery.html">Next: Gallery →</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>&copy; <span id="year"></span> NYC Journal</p></div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
