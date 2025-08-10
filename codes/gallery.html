@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NYC Journal | Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-row">
+    <a href="index.html" class="logo">NYC Journal</a>
+    <ul class="tabs">
+      <li><a class="tab" href="index.html">Home</a></li>
+      <li><a class="tab" href="attractions.html">Attractions</a></li>
+      <li><a class="tab" href="culture.html">Culture</a></li>
+      <li><a class="tab active" href="gallery.html">Gallery</a></li>
+      <li><a class="tab" href="contact.html">Contact</a></li>
+    </ul>
+    <div class="row gap">
+      <a class="btn btn-nav" href="culture.html">← Culture</a>
+      <a class="btn btn-nav" href="contact.html">Next: Contact →</a>
+    </div>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1>Gallery</h1>
+    <p class="lede">A visual journey through iconic sights and everyday moments across the five boroughs.</p>
+
+    <div class="grid">
+      <figure class="tile ratio-21x9">
+        <img class="fit" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/a4/59/20/photo5jpg.jpg?w=2000&h=-1&s=1" alt="Panoramic Manhattan skyline with One World Trade Center">
+        <figcaption>Manhattan Skyline</figcaption>
+      </figure>
+
+      <figure class="tile ratio-3x4">
+        <img class="fit" src="https://i.pinimg.com/736x/6a/f0/b4/6af0b45dcb59cb5a78121fd201d18247.jpg" alt="Subway entrance">
+        <figcaption>Subway Life</figcaption>
+      </figure>
+
+      <figure class="tile ratio-4x3">
+        <img class="fit" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/New_York_City_taxi_cabs.JPG/500px-New_York_City_taxi_cabs.JPG" alt="Yellow cabs">
+        <figcaption>Yellow Cabs</figcaption>
+      </figure>
+
+      <figure class="tile ratio-4x3">
+        <img class="fit" src="https://cdn.vox-cdn.com/thumbor/vfP32EdfHssHtEknAq-I1Tyv0Zw=/0x0:2000x1333/2070x828/filters:focal(840x507:1160x827):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/63748975/Highline_Guide_Max_Touhey_20190416_0082.0.jpg" alt="High Line park">
+        <figcaption>The High Line</figcaption>
+      </figure>
+
+      <figure class="tile ratio-3x4">
+        <img class="fit" src="https://cdn.vox-cdn.com/thumbor/aaiQTatbr7tw6TsnHBIIqooYNy4=/0x0:3000x1996/1520x1013/filters:focal(1260x758:1740x1238):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/51938403/brownstone_stock.0.jpeg" alt="Brooklyn brownstones">
+        <figcaption>Brooklyn Brownstones</figcaption>
+      </figure>
+
+      <figure class="tile ratio-21x9">
+        <img class="fit" src="https://offloadmedia.feverup.com/secretnyc.co/wp-content/uploads/2022/02/25070618/shutterstock_1431192575-1024x688.jpg" alt="NY pizza">
+        <figcaption>NY Pizza</figcaption>
+      </figure>
+
+      <figure class="tile ratio-4x3">
+        <img class="fit" src="https://www.hudsonyardsnewyork.com/sites/default/files/styles/experience_details/public/2024-10/Vessel%20in%20New%20York%20City_Courtesy%20of%20Vessel_0.jpg?h=1701b1d9&itok=aY0GiOXO" alt="Hudson Yards Vessel">
+        <figcaption>Hudson Yards</figcaption>
+      </figure>
+
+      <figure class="tile ratio-4x3">
+        <img class="fit" src="https://cdn.traveltripper.io/site-assets/32_742_18848/media/2018-09-07-122701/fall-foliage-central-park.jpg" alt="Autumn in Central Park">
+        <figcaption>Autumn in the Park</figcaption>
+      </figure>
+    </div>
+
+    <nav class="row between">
+      <a class="btn btn-outline" href="culture.html">← Culture</a>
+      <a class="btn btn-primary" href="contact.html">Next: Contact →</a>
+    </nav>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container"><p>&copy; <span id="year"></span> NYC Journal</p></div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
